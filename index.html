@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/"
+      }
+    }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md Khalid | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            },
+            colors: {
+              'dark-bg': '#030712',
+              'dark-panel': '#0b1329',
+              'dark-border': '#1e293b',
+              'accent-teal': '#0ea5e9',
+              'accent-emerald': '#10b981',
+              'accent-pink': '#d946ef',
+              'accent-indigo': '#6366f1',
+              'text-dark': '#0f172a',
+              'text-light': '#f8fafc',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'fade-out': 'fadeOut 0.5s ease-in forwards',
+              'pulse-neon': 'pulseNeon 2s infinite ease-in-out',
+              'flow-line': 'flowLine 4s infinite linear',
+              'float': 'float 6s infinite ease-in-out',
+              'bounce-slow': 'bounce 3s infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(15px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeOut: {
+                '0%': { opacity: '1' },
+                '100%': { opacity: '0' },
+              },
+              pulseNeon: {
+                '0%, 100%': { opacity: '0.4', filter: 'drop-shadow(0 0 2px rgba(99, 102, 241, 0.5))' },
+                '50%': { opacity: '1', filter: 'drop-shadow(0 0 10px rgba(99, 102, 241, 0.8))' },
+              },
+              flowLine: {
+                '0%': { strokeDashoffset: '100% ' },
+                '100%': { strokeDashoffset: '0%' }
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #030712;
+        color: #f1f5f9;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #030712;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+      .neon-border {
+        box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
+      }
+      .neon-text-teal {
+        text-shadow: 0 0 8px rgba(14, 165, 233, 0.5);
+      }
+      .neon-text-pink {
+        text-shadow: 0 0 8px rgba(217, 70, 239, 0.5);
+      }
+      /* Animation styles */
+      @keyframes dash {
+        to {
+          stroke-dashoffset: -40;
+        }
+      }
+      .animate-dash {
+        stroke-dasharray: 8 4;
+        animation: dash 2s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
