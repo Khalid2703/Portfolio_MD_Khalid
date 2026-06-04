@@ -228,7 +228,7 @@ const Hero: React.FC<HeroProps> = ({ onNavClick }) => {
               <div className="flex-1 space-y-3.5 overflow-y-auto text-left leading-normal scrollbar-none">
                 <p className="text-gray-500">&gt; npx langgraph-cli dev --port 3000</p>
                 <p className="text-accent-emerald">[OK] LangGraph server started at localhost:3000</p>
-                <p className="text-gray-400">⚡ Initializing Multi-Agent Orchestrator...</p>
+                <p className="text-gray-400">[INIT] Initializing Multi-Agent Orchestrator...</p>
                 
                 <p className="text-gray-300">
                   <span className="text-accent-indigo">system_router:</span> Received incoming query: <span className="text-yellow-400">"Patient requires symptom triage and scheduling..."</span>
@@ -251,9 +251,9 @@ const Hero: React.FC<HeroProps> = ({ onNavClick }) => {
                 </p>
 
                 <div className="pl-4 border-l border-emerald-500/40 space-y-1">
-                  <p className="text-accent-emerald">✓ Faithfulness Score: 0.982</p>
-                  <p className="text-accent-emerald">✓ Context Recall: 0.965</p>
-                  <p className="text-accent-emerald">✓ Hallucination Risk: Nill (No hallucinations detected)</p>
+                  <p className="text-accent-emerald">[OK] Faithfulness Score: 0.982</p>
+                  <p className="text-accent-emerald">[OK] Context Recall: 0.965</p>
+                  <p className="text-accent-emerald">[OK] Hallucination Risk: Nill (No hallucinations detected)</p>
                 </div>
 
                 <p className="text-accent-teal animate-pulse">● Awaiting human review trigger...</p>

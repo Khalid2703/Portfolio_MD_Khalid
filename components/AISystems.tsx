@@ -485,7 +485,7 @@ const AISystems: React.FC = () => {
                   let colorClass = "text-gray-400";
                   if (log.startsWith('[EXECUTION') || log.startsWith('[SUCCESS')) {
                     colorClass = "text-accent-pink font-bold";
-                  } else if (log.startsWith('✓') || log.includes('Status: DELIVERED') || log.includes('APPROVED')) {
+                  } else if (log.startsWith('[OK]') || log.includes('Status: DELIVERED') || log.includes('APPROVED')) {
                     colorClass = "text-accent-emerald font-semibold";
                   } else if (log.includes('Confidence:')) {
                     colorClass = "text-yellow-400";

@@ -77,7 +77,7 @@ const SkillsContent: React.FC = () => {
 
                 {/* Sub-context description panel matching linear style */}
                 <span className="text-[10px] uppercase font-mono text-gray-500 font-semibold tracking-wider text-left mt-6 pt-3 border-t border-dark-border/40 block">
-                  SYSTEM READY ACCREDITATION ✅
+                  SYSTEM READY ACCREDITATION [VERIFIED]
                 </span>
               </div>
             );
