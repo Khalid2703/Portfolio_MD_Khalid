@@ -121,7 +121,7 @@ const Hero: React.FC<HeroProps> = ({ onNavClick }) => {
           <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
             
             {/* Tagline */}
-            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-accent-indigo/10 to-accent-teal/10 hover:from-accent-indigo/20 hover:to-accent-teal/20 transition-all border border-accent-indigo/20 rounded-full px-4 py-1.5 w-fit">
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600/10 to-accent-teal/10 hover:from-accent-indigo/20 hover:to-accent-teal/20 transition-all border border-accent-indigo/20 rounded-full px-4 py-1.5 w-fit">
               <Bot size={14} className="text-accent-teal animate-pulse" />
               <span className="font-mono text-xs text-accent-teaser text-gray-300 font-semibold tracking-wider uppercase">
                 LangGraph &amp; AI Agents Systems
@@ -150,7 +150,7 @@ const Hero: React.FC<HeroProps> = ({ onNavClick }) => {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <button
                 onClick={() => onNavClick('systems')}
-                className="group relative inline-flex items-center space-x-2 bg-gradient-to-r from-accent-indigo to-accent-teal hover:from-accent-teal hover:to-accent-indigo text-dark-bg font-semibold px-6 py-3.5 rounded shadow-lg transition-all duration-300 transform active:scale-95"
+                className="group relative inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-accent-teal hover:from-accent-teal hover:to-blue-600 text-dark-bg font-semibold px-6 py-3.5 rounded shadow-lg transition-all duration-300 transform active:scale-95"
               >
                 <span>Explore Built Systems</span>
                 <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

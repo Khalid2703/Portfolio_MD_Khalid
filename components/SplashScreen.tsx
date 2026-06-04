@@ -44,7 +44,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onFinished }) => {
         {/* Custom Progress Bar */}
         <div className="w-full bg-white/5 border border-dark-border/60 h-2 rounded-full overflow-hidden relative">
           <div 
-            className="h-full bg-gradient-to-r from-accent-indigo to-accent-teal transition-all duration-75"
+            className="h-full bg-gradient-to-r from-blue-600 to-accent-teal transition-all duration-75"
             style={{ width: `${percent}%` }}
           />
         </div>

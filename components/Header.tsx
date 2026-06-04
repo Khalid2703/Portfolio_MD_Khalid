@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ onNavClick, activeId }) => {
           {/* Logo */}
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => onNavClick('hero')}>
             <Cpu className="text-accent-teal h-6 w-6 animate-pulse" />
-            <span className="font-mono text-lg font-bold tracking-wider text-text-light bg-gradient-to-r from-text-light via-accent-indigo to-accent-teal bg-clip-text text-transparent">
+            <span className="font-mono text-lg font-bold tracking-wider text-text-light bg-gradient-to-r from-text-light via-blue-400 to-accent-teal bg-clip-text text-transparent">
               MD KHALID
             </span>
           </div>
@@ -86,7 +86,7 @@ const Header: React.FC<HeaderProps> = ({ onNavClick, activeId }) => {
               </a>
               <button 
                 onClick={() => onNavClick('contact')}
-                className="px-4 py-2 bg-gradient-to-r from-accent-indigo/10 to-accent-teal/10 hover:from-accent-indigo hover:to-accent-teal text-accent-teal hover:text-dark-bg border border-accent-teal/30 hover:border-transparent font-mono text-xs rounded transition-all duration-300"
+                className="px-4 py-2 bg-gradient-to-r from-blue-600/10 to-accent-teal/10 hover:from-blue-600 hover:to-accent-teal text-accent-teal hover:text-dark-bg border border-accent-teal/30 hover:border-transparent font-mono text-xs rounded transition-all duration-300"
               >
                 Get In Touch
               </button>
@@ -157,7 +157,7 @@ const Header: React.FC<HeaderProps> = ({ onNavClick, activeId }) => {
               onNavClick('contact');
               setIsOpen(false);
             }}
-            className="w-full mt-4 py-3 bg-gradient-to-r from-accent-indigo to-accent-teal text-dark-bg tracking-wide font-mono text-sm rounded font-bold hover:brightness-110 active:scale-95 transition-all text-center block"
+            className="w-full mt-4 py-3 bg-gradient-to-r from-blue-600 to-accent-teal text-dark-bg tracking-wide font-mono text-sm rounded font-bold hover:brightness-110 active:scale-95 transition-all text-center block"
           >
             LET'S CHAT
           </button>

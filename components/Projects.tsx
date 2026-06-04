@@ -298,7 +298,7 @@ const Projects: React.FC = () => {
               <div className="bg-dark-panel border-t border-dark-border p-4 flex justify-end">
                 <button
                   onClick={() => setSelectedProj(null)}
-                  className="px-4 py-2 bg-gradient-to-r from-accent-indigo to-accent-teal text-dark-bg font-bold font-mono text-xs rounded transition-all hover:brightness-105 active:scale-95"
+                  className="px-4 py-2 bg-gradient-to-r from-blue-600 to-accent-teal text-dark-bg font-bold font-mono text-xs rounded transition-all hover:brightness-105 active:scale-95"
                 >
                   Dismiss Logs
                 </button>

@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
                 </p>
                 <button
                   onClick={() => setStatus('idle')}
-                  className="px-4 py-2 bg-gradient-to-r from-accent-indigo to-accent-teal text-dark-bg font-bold font-mono text-xs rounded transition-all hover:brightness-105 active:scale-95"
+                  className="px-4 py-2 bg-gradient-to-r from-blue-600 to-accent-teal text-dark-bg font-bold font-mono text-xs rounded transition-all hover:brightness-105 active:scale-95"
                 >
                   Send Another Frame
                 </button>
@@ -187,7 +187,7 @@ const Contact: React.FC = () => {
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full py-3.5 bg-gradient-to-r from-accent-indigo via-accent-teal to-accent-indigo text-dark-bg font-bold tracking-wide font-mono text-sm rounded flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-[1.01] active:scale-95 disabled:opacity-50"
+                  className="w-full py-3.5 bg-gradient-to-r from-blue-600 via-accent-teal to-blue-600 text-dark-bg font-bold tracking-wide font-mono text-sm rounded flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-[1.01] active:scale-95 disabled:opacity-50"
                 >
                   <Send size={15} />
                   <span>{status === 'submitting' ? 'SERIALIZING PAYLOAD...' : 'TRANSMIT ENCRYPTED PAYLOAD'}</span>
